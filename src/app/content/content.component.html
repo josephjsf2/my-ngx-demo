@@ -1,0 +1,4 @@
+<ng-container *ngIf="src | async; else waiting">
+  <ng-content></ng-content>
+</ng-container>
+<ng-template #waiting>Waiting async pipe</ng-template>
